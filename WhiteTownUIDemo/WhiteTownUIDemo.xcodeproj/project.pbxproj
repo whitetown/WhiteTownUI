@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,7 @@
 		200A96D82630C9CB00C67457 /* DemoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200A96D72630C9CB00C67457 /* DemoTableViewController.swift */; };
 		200A96DB2630C9F000C67457 /* DemoScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200A96DA2630C9F000C67457 /* DemoScanViewController.swift */; };
 		200A96DE2630CA3900C67457 /* DemoSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200A96DD2630CA3900C67457 /* DemoSearchViewController.swift */; };
+		207E1483275027C80004A7F2 /* WhiteTownUI in Frameworks */ = {isa = PBXBuildFile; productRef = 207E1482275027C80004A7F2 /* WhiteTownUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				207E1483275027C80004A7F2 /* WhiteTownUI in Frameworks */,
 				068489CB4D3263EF52E33E88 /* Pods_WhiteTownUIDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,13 +134,16 @@
 				200A96A42630C63B00C67457 /* Sources */,
 				200A96A52630C63B00C67457 /* Frameworks */,
 				200A96A62630C63B00C67457 /* Resources */,
-				0AAEEAF667BC7EB40E17B174 /* [CP] Embed Pods Frameworks */,
+				7A9D160E9D267D98940E82F4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = WhiteTownUIDemo;
+			packageProductDependencies = (
+				207E1482275027C80004A7F2 /* WhiteTownUI */,
+			);
 			productName = WhiteTownUIDemo;
 			productReference = 200A96A82630C63B00C67457 /* WhiteTownUIDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -166,6 +171,9 @@
 				Base,
 			);
 			mainGroup = 200A969F2630C63B00C67457;
+			packageReferences = (
+				207E1481275027C80004A7F2 /* XCRemoteSwiftPackageReference "WhiteTownUI" */,
+			);
 			productRefGroup = 200A96A92630C63B00C67457 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -188,23 +196,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0AAEEAF667BC7EB40E17B174 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WhiteTownUIDemo/Pods-WhiteTownUIDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WhiteTownUIDemo/Pods-WhiteTownUIDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WhiteTownUIDemo/Pods-WhiteTownUIDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		4F54D2D082FF915655E2B6C2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -225,6 +216,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A9D160E9D267D98940E82F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhiteTownUIDemo/Pods-WhiteTownUIDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhiteTownUIDemo/Pods-WhiteTownUIDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WhiteTownUIDemo/Pods-WhiteTownUIDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -435,6 +443,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		207E1481275027C80004A7F2 /* XCRemoteSwiftPackageReference "WhiteTownUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/whitetown/WhiteTownUI.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		207E1482275027C80004A7F2 /* WhiteTownUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 207E1481275027C80004A7F2 /* XCRemoteSwiftPackageReference "WhiteTownUI" */;
+			productName = WhiteTownUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 200A96A02630C63B00C67457 /* Project object */;
 }
