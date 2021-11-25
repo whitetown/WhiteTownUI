@@ -11,8 +11,8 @@ use_frameworks!
 target 'WhiteTownUIDemo' do
   project 'WhiteTownUIDemo.xcodeproj'
 
-  #pod 'WhiteTownUI',  :git => 'https://whitetown@bitbucket.org/whitetown/whitetownui.git'
-  pod 'WhiteTownUI',  :path => '../'
+  pod 'WhiteTownUI',  :git => 'https://github.com/whitetown/WhitetownUI.git'
+#  pod 'WhiteTownUI',  :path => '../'
 
 end
 
