@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
     spec.swift_version = "5.1"
 
     spec.source        = { :git => "https://github.com/whitetown/WhiteTownUI.git", :tag => "#{spec.version}" }
-    spec.source_files  = "WhiteTownUI/**/*.swift"
+    spec.source_files  = "Sources/WhiteTownUI/**/*.swift"
 
     spec.dependency     'SnapKit'
     spec.dependency     'SwiftMessages'
