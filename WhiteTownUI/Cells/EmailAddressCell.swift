@@ -12,8 +12,8 @@ open class EmailAddressCell: InputCell {
     open override func initialize() {
         super.initialize()
 
-        self.title = "Login".unlocalized
-        self.textField.placeholder = "example@whitetown.com".unlocalized
+        self.title = "Email".localized
+        self.textField.placeholder = "example@whitetown.com".localized
         self.textField.keyboardType = .emailAddress
         self.textField.autocapitalizationType = .none
         self.textField.autocorrectionType = .no

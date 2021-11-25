@@ -239,7 +239,7 @@ open class BaseScanController: BaseViewController {
 
         self.confirmButton.titleLabel?.font = UIFont.systemFont(ofSize: 17)
         self.confirmButton.fgColor = UIColor.navColorX
-        self.confirmButton.setTitle("Confirm".unlocalized, for: .normal)
+        self.confirmButton.setTitle("Confirm".localized, for: .normal)
         self.confirmButton.sizeToFit()
         self.editContainer.addSubview(self.confirmButton)
         self.confirmButton.snp.makeConstraints { (make) in
@@ -262,7 +262,7 @@ open class BaseScanController: BaseViewController {
         self.editField.layer.borderColor = UIColor.clear.cgColor
         self.editField.backgroundColor = UIColor.black.withAlphaComponent(0.15)
         self.editField.placeholderColor = UIColor.navColorX.withAlphaComponent(0.5)
-        self.editField.placeholder = "Sensor ID".unlocalized
+        self.editField.placeholder = "Barcode/QR-code".localized
         self.editContainer.addSubview(self.editField)
         self.editField.snp.makeConstraints { (make) in
             make.leading.equalTo(self.kbdButton.snp.trailing)//.inset(16)
@@ -328,7 +328,7 @@ open class BaseScanController: BaseViewController {
     }
 
     func useRegularKeyboard() {
-        self.editField.placeholder = "Enter manually".unlocalized
+        self.editField.placeholder = "Manually".localized
         self.editField.inputView = nil
         self.editField.reloadInputViews()
     }

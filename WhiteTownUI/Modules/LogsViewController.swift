@@ -17,7 +17,7 @@ open class LogsViewController: BaseViewController {
     open override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationItem.title = "Logs".unlocalized
+        self.navigationItem.title = "Logs".localized
 
         self.tv.textColor = UIColor.textColor
         self.tv.backgroundColor = .clear

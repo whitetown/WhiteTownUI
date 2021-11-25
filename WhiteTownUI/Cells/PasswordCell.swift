@@ -26,8 +26,8 @@ open class PasswordCell: InputCell {
         self.mustValidate = true
 
         self.textField.clearButtonMode = .never
-        self.title = "Password".unlocalized
-        self.textField.placeholder = "password".unlocalized
+        self.title = "Password".localized
+        self.textField.placeholder = "password".localized
         self.textField.isSecureTextEntry = true
         #if DEBUG
         self.textField.textContentType = .oneTimeCode

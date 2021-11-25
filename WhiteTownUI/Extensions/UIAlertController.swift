@@ -12,15 +12,15 @@ public extension UIAlertController {
 
     static func locationWarning() -> UIAlertController  {
 
-        let ac = UIAlertController(title: "Location setting are disabled".unlocalized,
-                                       message: "Go to your phone settings and allow app to use your location".unlocalized,
+        let ac = UIAlertController(title: "Location setting are disabled".localized,
+                                       message: "Go to your phone settings and allow app to use your location".localized,
                                        preferredStyle: .alert)
 
-        ac.addAction(UIAlertAction(title: "OK".unlocalized, style: .default, handler: { (_) in
+        ac.addAction(UIAlertAction(title: "OK".localized, style: .default, handler: { (_) in
 
         }))
 
-        ac.addAction(UIAlertAction(title: "Settings".unlocalized, style: .default, handler: { (_) in
+        ac.addAction(UIAlertAction(title: "Settings".localized, style: .default, handler: { (_) in
             UIApplication.openSystemSettings()
         }))
 
@@ -29,15 +29,15 @@ public extension UIAlertController {
 
     static func bluetoothWarning() -> UIAlertController  {
 
-        let ac = UIAlertController(title: "Bluetooth permision not given".unlocalized,
-                                       message: "Go to your phone settings and allow app to use bluetooth.".unlocalized,
+        let ac = UIAlertController(title: "Bluetooth permision not given".localized,
+                                       message: "Go to your phone settings and allow app to use bluetooth.".localized,
                                        preferredStyle: .alert)
 
-        ac.addAction(UIAlertAction(title: "OK".unlocalized, style: .default, handler: { (_) in
+        ac.addAction(UIAlertAction(title: "OK".localized, style: .default, handler: { (_) in
 
         }))
 
-        ac.addAction(UIAlertAction(title: "Settings".unlocalized, style: .default, handler: { (_) in
+        ac.addAction(UIAlertAction(title: "Settings".localized, style: .default, handler: { (_) in
             UIApplication.openSystemSettings()
         }))
 
@@ -46,15 +46,15 @@ public extension UIAlertController {
 
     static func photoWarning() -> UIAlertController  {
 
-        let ac = UIAlertController(title: "Photo library permision not given".unlocalized,
-                                       message: "Go to your phone settings and allow app to use photo library".unlocalized,
+        let ac = UIAlertController(title: "Photo library permision not given".localized,
+                                       message: "Go to your phone settings and allow app to use photo library".localized,
                                        preferredStyle: .alert)
 
-        ac.addAction(UIAlertAction(title: "OK".unlocalized, style: .default, handler: { (_) in
+        ac.addAction(UIAlertAction(title: "OK".localized, style: .default, handler: { (_) in
 
         }))
 
-        ac.addAction(UIAlertAction(title: "Settings".unlocalized, style: .default, handler: { (_) in
+        ac.addAction(UIAlertAction(title: "Settings".localized, style: .default, handler: { (_) in
             UIApplication.openSystemSettings()
         }))
 
@@ -63,15 +63,15 @@ public extension UIAlertController {
 
     static func cameraWarning() -> UIAlertController  {
 
-        let ac = UIAlertController(title: "Camera permision not given".unlocalized,
-                                       message: "Go to your phone settings and allow app to use camera".unlocalized,
+        let ac = UIAlertController(title: "Camera permision not given".localized,
+                                       message: "Go to your phone settings and allow app to use camera".localized,
                                        preferredStyle: .alert)
 
-        ac.addAction(UIAlertAction(title: "OK".unlocalized, style: .default, handler: { (_) in
+        ac.addAction(UIAlertAction(title: "OK".localized, style: .default, handler: { (_) in
 
         }))
 
-        ac.addAction(UIAlertAction(title: "Settings".unlocalized, style: .default, handler: { (_) in
+        ac.addAction(UIAlertAction(title: "Settings".localized, style: .default, handler: { (_) in
             UIApplication.openSystemSettings()
         }))
 
@@ -88,21 +88,21 @@ public extension UIAlertController {
                                    message: nil,
                                    preferredStyle: .actionSheet)
 
-        ac.addAction(UIAlertAction(title: "Take photo".unlocalized,
+        ac.addAction(UIAlertAction(title: "Take photo".localized,
                                    style: .default, handler: { (_) in
                                     ac.dismiss(animated: true) {
                                         onCamera()
                                     }
                                    }))
 
-        ac.addAction(UIAlertAction(title: "Choose photo".unlocalized,
+        ac.addAction(UIAlertAction(title: "Choose photo".localized,
                                    style: .default, handler: { (_) in
                                     ac.dismiss(animated: true) {
                                         onLibrary()
                                     }
                                    }))
 
-        ac.addAction(UIAlertAction(title: "Cancel".unlocalized, style: .cancel))
+        ac.addAction(UIAlertAction(title: "Cancel".localized, style: .cancel))
         return ac
     }
 
