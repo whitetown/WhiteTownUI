@@ -63,8 +63,8 @@
 /* Begin PBXFileReference section */
 		2083173A26203CF300030B2A /* BaseTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
 		209065D425FD4CD800A6FC95 /* WhiteTownUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WhiteTownUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		209065D725FD4CD800A6FC95 /* WhiteTownUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WhiteTownUI.h; sourceTree = "<group>"; };
-		209065D825FD4CD800A6FC95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		209065D725FD4CD800A6FC95 /* WhiteTownUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = WhiteTownUI.h; path = Resources/WhiteTownUI.h; sourceTree = SOURCE_ROOT; };
+		209065D825FD4CD800A6FC95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Resources/Info.plist; sourceTree = SOURCE_ROOT; };
 		209065E525FD4D7200A6FC95 /* ColorSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSet.swift; sourceTree = "<group>"; };
 		209065E825FD4DBE00A6FC95 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		209065EB25FD55CD00A6FC95 /* WTTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WTTextField.swift; sourceTree = "<group>"; };
@@ -168,7 +168,8 @@
 				209065D725FD4CD800A6FC95 /* WhiteTownUI.h */,
 				209065D825FD4CD800A6FC95 /* Info.plist */,
 			);
-			path = WhiteTownUI;
+			name = WhiteTownUI;
+			path = Sources/WhiteTownUI;
 			sourceTree = "<group>";
 		};
 		209065E025FD4D1C00A6FC95 /* Views */ = {
@@ -560,18 +561,18 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = W45HK3V9VT;
+				DEVELOPMENT_TEAM = 8RAQ8S5H7N;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = WhiteTownUI/Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.9;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.whitetown.WhiteTownUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -588,18 +589,18 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = W45HK3V9VT;
+				DEVELOPMENT_TEAM = 8RAQ8S5H7N;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = WhiteTownUI/Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.9;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.whitetown.WhiteTownUI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
