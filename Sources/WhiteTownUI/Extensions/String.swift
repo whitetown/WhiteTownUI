@@ -15,7 +15,7 @@ public extension String {
     }
     #else
     @available(*, deprecated, message: "You should not use unlocalized strings in release builds")
-    public var unlocalized: String {
+    var unlocalized: String {
         return self
     }
     #endif
