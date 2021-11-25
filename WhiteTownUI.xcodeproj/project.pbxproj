@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -55,6 +55,8 @@
 		209068722602232D00A6FC95 /* HexKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209068712602232C00A6FC95 /* HexKeyboard.swift */; };
 		209068752602237600A6FC95 /* HexCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209068742602237600A6FC95 /* HexCell.swift */; };
 		209068D92602535700A6FC95 /* FreeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209068D82602535600A6FC95 /* FreeCell.swift */; };
+		2099B8A2275018E600B9E3CB /* SwiftMessages in Frameworks */ = {isa = PBXBuildFile; productRef = 2099B8A1275018E600B9E3CB /* SwiftMessages */; };
+		2099B8A52750191A00B9E3CB /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2099B8A42750191A00B9E3CB /* SnapKit */; };
 		209C2D7526038DE60005F5F2 /* MKCoordinateRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209C2D7426038DE60005F5F2 /* MKCoordinateRegion.swift */; };
 		20CD95CB263E756400ADB479 /* InputToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CD95CA263E756400ADB479 /* InputToolbar.swift */; };
 		DF60A85328082B7F79BE6746 /* Pods_WhiteTownUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A27CE9E466C80FBC68C723 /* Pods_WhiteTownUI.framework */; };
@@ -123,6 +125,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2099B8A52750191A00B9E3CB /* SnapKit in Frameworks */,
+				2099B8A2275018E600B9E3CB /* SwiftMessages in Frameworks */,
 				DF60A85328082B7F79BE6746 /* Pods_WhiteTownUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +305,10 @@
 			dependencies = (
 			);
 			name = WhiteTownUI;
+			packageProductDependencies = (
+				2099B8A1275018E600B9E3CB /* SwiftMessages */,
+				2099B8A42750191A00B9E3CB /* SnapKit */,
+			);
 			productName = WhiteTownUI;
 			productReference = 209065D425FD4CD800A6FC95 /* WhiteTownUI.framework */;
 			productType = "com.apple.product-type.framework";
@@ -328,6 +336,10 @@
 				Base,
 			);
 			mainGroup = 209065CA25FD4CD800A6FC95;
+			packageReferences = (
+				2099B8A0275018E600B9E3CB /* XCRemoteSwiftPackageReference "SwiftMessages" */,
+				2099B8A32750191A00B9E3CB /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 209065D525FD4CD800A6FC95 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -631,6 +643,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2099B8A0275018E600B9E3CB /* XCRemoteSwiftPackageReference "SwiftMessages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftKickMobile/SwiftMessages";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		2099B8A32750191A00B9E3CB /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2099B8A1275018E600B9E3CB /* SwiftMessages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2099B8A0275018E600B9E3CB /* XCRemoteSwiftPackageReference "SwiftMessages" */;
+			productName = SwiftMessages;
+		};
+		2099B8A42750191A00B9E3CB /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2099B8A32750191A00B9E3CB /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 209065CB25FD4CD800A6FC95 /* Project object */;
 }

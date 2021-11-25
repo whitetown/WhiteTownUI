@@ -7,8 +7,8 @@ use_frameworks!
 
 target 'WhiteTownUI' do
 
-  pod 'SnapKit'
-  pod 'SwiftMessages'
+#  pod 'SnapKit'
+#  pod 'SwiftMessages'
 #  pod 'NotificationBannerSwift', '~> 3.0.0'
 
 end
