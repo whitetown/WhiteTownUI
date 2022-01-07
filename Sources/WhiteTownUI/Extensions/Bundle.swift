@@ -9,6 +9,10 @@ import UIKit
 
 public extension Bundle {
 
+    var appName: String {
+        return self.object(forInfoDictionaryKey: kCFBundleExecutableKey as String) as? String ?? "WhiteTownUI"
+    }
+
     var versionString: String {
         return Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "1.0.0"
     }

@@ -41,8 +41,8 @@ open class BaseTableViewController: BaseViewController {
         self.view.addSubview(self.tableView)
     }
 
-    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if scrollView.panGestureRecognizer.translation(in: scrollView.superview).y > 0 {
+    open func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if scrollView.panGestureRecognizer.translation(in: scrollView.superview).y > 0 && scrollView.panGestureRecognizer.velocity(in: scrollView.superview).y > 0 {
             self.view.endEditing(true)
         }
     }

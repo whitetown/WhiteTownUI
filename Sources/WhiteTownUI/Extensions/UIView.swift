@@ -8,6 +8,13 @@
 import UIKit
 
 public extension UIView {
+    var x: CGFloat { self.frame.minX }
+    var y: CGFloat { self.frame.minY }
+    var width: CGFloat { self.frame.width }
+    var height: CGFloat { self.frame.height }
+}
+
+public extension UIView {
 
     func shake() {
         let animation = CAKeyframeAnimation(keyPath: "transform.translation.x")
@@ -15,14 +22,6 @@ public extension UIView {
         animation.duration = 0.6
         animation.values = [-20.0, 19.0, -17.0, 15.0, -13.0, 10.0, -7.0, 3.0, 0.0 ]
         layer.add(animation, forKey: "shake")
-    }
-
-    var width: CGFloat {
-        return self.frame.size.width
-    }
-
-    var height: CGFloat {
-        return self.frame.size.height
     }
 
     func addAnimation(type: CATransitionType, subtype: CATransitionSubtype, duration: TimeInterval) {
