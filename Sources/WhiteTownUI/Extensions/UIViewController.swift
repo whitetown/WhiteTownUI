@@ -119,8 +119,13 @@ public extension UIViewController {
 public extension UIViewController {
 
     var topbarHeight: CGFloat {
-        (view.window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0.0) +
-        (self.navigationController?.navigationBar.frame.height ?? 0.0)
+        let navHeight = (self.navigationController?.navigationBar.frame.height ?? 0.0)
+        if #available(iOS 13.0, *) {
+            return navHeight + (self.view.window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0.0)
+        } else {
+            return navHeight + UIApplication.shared.statusBarFrame.height
+        }
+
     }
 }
 
