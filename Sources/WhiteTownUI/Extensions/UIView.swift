@@ -75,7 +75,7 @@ public extension UIView {
 
 public extension UIView {
 
-    func addBlur(_ effect: UIBlurEffect.Style, alpha: CGFloat = 1) {
+    func addBlur(_ effect: UIBlurEffect.Style, alpha: CGFloat = 1) -> UIVisualEffectView {
         // create effect
         let effect = UIBlurEffect(style: effect)
         let effectView = UIVisualEffectView(effect: effect)
@@ -85,7 +85,8 @@ public extension UIView {
         effectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         effectView.alpha = alpha
 
-        self.addSubview(effectView)
+        self.insertSubview(effectView, at: 0)
+        return effectView
     }
 
     func removeBlur() {

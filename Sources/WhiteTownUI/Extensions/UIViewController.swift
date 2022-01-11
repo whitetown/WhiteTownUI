@@ -116,6 +116,14 @@ public extension UIViewController {
 
 }
 
+public extension UIViewController {
+
+    var topbarHeight: CGFloat {
+        (view.window?.windowScene?.statusBarManager?.statusBarFrame.height ?? 0.0) +
+        (self.navigationController?.navigationBar.frame.height ?? 0.0)
+    }
+}
+
 /*
 
  public extension UIViewController {
