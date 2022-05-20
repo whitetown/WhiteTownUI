@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
     spec.name         = "WhiteTownUI"
-    spec.version      = "0.1.4"
+    spec.version      = "0.1.5"
     spec.summary      = "WhiteTownUI framework"
 
     spec.homepage     = "https://github.com/whitetown/WhiteTownUI"

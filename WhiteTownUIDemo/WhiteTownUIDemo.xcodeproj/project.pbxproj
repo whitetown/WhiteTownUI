@@ -134,7 +134,6 @@
 				200A96A42630C63B00C67457 /* Sources */,
 				200A96A52630C63B00C67457 /* Frameworks */,
 				200A96A62630C63B00C67457 /* Resources */,
-				7A9D160E9D267D98940E82F4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -172,7 +171,7 @@
 			);
 			mainGroup = 200A969F2630C63B00C67457;
 			packageReferences = (
-				207E1481275027C80004A7F2 /* XCRemoteSwiftPackageReference "WhiteTownUI" */,
+				207E1481275027C80004A7F2 /* XCRemoteSwiftPackageReference "WhiteTownUI.git" */,
 			);
 			productRefGroup = 200A96A92630C63B00C67457 /* Products */;
 			projectDirPath = "";
@@ -216,23 +215,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7A9D160E9D267D98940E82F4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WhiteTownUIDemo/Pods-WhiteTownUIDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WhiteTownUIDemo/Pods-WhiteTownUIDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WhiteTownUIDemo/Pods-WhiteTownUIDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -445,7 +427,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		207E1481275027C80004A7F2 /* XCRemoteSwiftPackageReference "WhiteTownUI" */ = {
+		207E1481275027C80004A7F2 /* XCRemoteSwiftPackageReference "WhiteTownUI.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/whitetown/WhiteTownUI.git";
 			requirement = {
@@ -458,7 +440,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		207E1482275027C80004A7F2 /* WhiteTownUI */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 207E1481275027C80004A7F2 /* XCRemoteSwiftPackageReference "WhiteTownUI" */;
+			package = 207E1481275027C80004A7F2 /* XCRemoteSwiftPackageReference "WhiteTownUI.git" */;
 			productName = WhiteTownUI;
 		};
 /* End XCSwiftPackageProductDependency section */

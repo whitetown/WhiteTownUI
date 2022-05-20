@@ -24,7 +24,7 @@ public class HexKeyboard: WTView {
         button.setTitle("\($0)", for: .normal)
         button.bgColor = UIColor.keyboardButtonColor
         button.fgColor = UIColor.keyboardTextColor
-        button.addTarget(self, action: #selector(didTapHexButton(_:)), for: .touchUpInside)
+        button.addTarget(HexKeyboard.self, action: #selector(didTapHexButton(_:)), for: .touchUpInside)
         return button
     }
 
@@ -34,7 +34,7 @@ public class HexKeyboard: WTView {
         button.bgColor = UIColor.keyboardButtonColor2
         button.fgColor = UIColor.keyboardTextColor
         button.accessibilityLabel = "Delete"
-        button.addTarget(self, action: #selector(didTapDeleteButton(_:)), for: .touchUpInside)
+        button.addTarget(HexKeyboard.self, action: #selector(didTapDeleteButton(_:)), for: .touchUpInside)
         return button
     }()
 
@@ -44,7 +44,7 @@ public class HexKeyboard: WTView {
         button.bgColor = UIColor.keyboardButtonColor2
         button.fgColor = UIColor.keyboardTextColor
         button.accessibilityLabel = "OK"
-        button.addTarget(self, action: #selector(didTapOKButton(_:)), for: .touchUpInside)
+        button.addTarget(HexKeyboard.self, action: #selector(didTapOKButton(_:)), for: .touchUpInside)
         return button
     }()
 

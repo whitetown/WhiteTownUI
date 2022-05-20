@@ -75,7 +75,7 @@ public extension UIView {
 
 public extension UIView {
 
-    func addBlur(_ effect: UIBlurEffect.Style, alpha: CGFloat = 1) -> UIVisualEffectView {
+    @discardableResult func addBlur(_ effect: UIBlurEffect.Style, alpha: CGFloat = 1) -> UIVisualEffectView {
         // create effect
         let effect = UIBlurEffect(style: effect)
         let effectView = UIVisualEffectView(effect: effect)
