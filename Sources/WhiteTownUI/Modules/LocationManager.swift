@@ -66,13 +66,13 @@ public class LocationManager: NSObject {
     }
     
     public var isEnabled: Bool {
-        return CLLocationManager.locationServicesEnabled()
-               && (self.status == .authorizedAlways || self.status == .authorizedWhenInUse)
+        return /*CLLocationManager.locationServicesEnabled()
+               &&*/ (self.status == .authorizedAlways || self.status == .authorizedWhenInUse)
     }
 
     public var isDisabled: Bool {
-        return CLLocationManager.locationServicesEnabled() == false
-            || self.status == .denied
+        return /*CLLocationManager.locationServicesEnabled() == false
+            ||*/ self.status == .denied
             || self.status == .restricted
     }
 

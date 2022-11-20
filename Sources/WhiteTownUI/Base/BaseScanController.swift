@@ -66,8 +66,10 @@ open class BaseScanController: BaseViewController {
         self.navigationController?.navigationBar.tintColor = .white
         self.navigationController?.navigationBar.barStyle = .blackTranslucent
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.captureSession.startRunning()
-        startScanning()
+        DispatchQueue.global().async {
+            self.captureSession.startRunning()
+            self.startScanning()
+        }
     }
 
     open override func viewDidDisappear(_ animated: Bool) {
